@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./css/contactUsStyle.css">
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="contactInfo">
+            <div>
+                <h2>Informations de contact</h2>
+                <ul class="info">
+                    <li>
+                <span>
+                  <img src="img/location.png"/>
+                </span>
+                        <span>48, route de Brumath - 67670 Mommenheim</span>
+                    </li>
+                    <li>
+                <span>
+                  <img src="img/mail.png"/>
+                </span>
+                        <span> info@synvork.fr </span>
+                    </li>
+                    <li>
+                <span>
+                  <!-- <img src="img/call.png"/> -->
+                </span>
+                        <!-- <span>+33763742888</span> -->
+                    </li>
+                </ul>
+            </div>
+            <ul class="sci">
+                <li>
+                    <a href="#">
+                        <img src="img/1.png"/>
+                    </a>
+                </li>
+                <!--                <li>-->
+                <!--                    <a href="#">-->
+                <!--                        <img src="img/2.png" />-->
+                <!--                    </a>-->
+                <!--                </li>-->
+                <li>
+                    <a href="#">
+                        <img src="img/3.png"/>
+                    </a>
+                </li>
+                <!--                <li>-->
+                <!--                    <a href="#">-->
+                <!--                        <img src="img/4.png" />-->
+                <!--                    </a>-->
+                <!--                </li>-->
+                <li>
+                    <a href="#">
+                        <img src="img/5.png"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contactForm">
+            <h2>Contactez-nous</h2>
+            <div class="formBox">
+                <div class="inputBox w50">
+                    <input tyep="text" required onfocusout="checkValidation('firstName')" id="firstName"/>
+                    <span>Prénom</span>
+                </div>
+                <div class="inputBox w50">
+                    <input tyep="text" required onfocusout="checkValidation('lastName')" id="lastName"/>
+                    <span>Nom de famille</span>
+                </div>
+                <div class="inputBox w50">
+                    <input tyep="email" required onfocusout="checkValidation('email')" id="email"/>
+                    <span>Adresse e-mail</span>
+                </div>
+                <div class="inputBox w50">
+                    <input tyep="text" required id="contactNumber"/>
+                    <span>Téléphone</span>
+                </div>
+                <div class="inputBox w100">
+                    <textarea required onfocusout="checkValidation('message')" id="message"></textarea>
+                    <span>Ecrivez votre message ici...</span>
+                </div>
+                <div class="inputBox w100">
+                    <input type="submit" value="Envoyer" id="contactSubmitButton"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="successMessage" class="modal">
+    <div class="modal-content" style="background-color: white; margin-top: 100px;">
+        <span class="close" onclick="closeSuccessMessage()">&times;</span>
+        <h3 style="color: green; margin-bottom: 20px; font-size: 18px; font-weight: bold; text-transform: none;">
+            Votre message a été envoyé avec succès.
+        </h3>
+        <p style="font-size: 1.5rem">Merci d'avoir pris contact avec nous. Nos collègues vous contacteront
+            rapidement.</p>
+    </div>
+</div>
+
+<div id="errorMessage" class="modal">
+    <div class="modal-content" style="background-color: white; margin-top: 100px;">
+        <span class="close" onclick="closeErrorMessage()">&times;</span>
+        <h3 style="color: red; margin-bottom: 20px; font-size: 18px ;font-weight: bold; text-transform: none;">
+            Échec de l'envoi du message !</h3>
+        <p style="font-size: 1.5rem;">Désolé, un problème est survenu lors de l'envoi de votre message. Veuillez
+            réessayer plus tard.</p>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
